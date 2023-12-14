@@ -58,3 +58,15 @@ Arrays: object
 Object: object
 Functions: function
 */
+
+//++++++++++++++++++++++++++++++++++++++
+/*  
+## All Primitive Datatypes are store into Stack
+  # In Stack only copy of a value is pass, 
+  Original one is remain same
+
+## All Non-Primitive Datatypes are store into Heap
+  # In Heap references of value is passed, 
+  if it changed original one is also changed
+
+*/
