@@ -1,2 +1,2 @@
 # Learn_JavaScript
-Learn JavaScript from Hitesh Chowdhury 
+## Learn JavaScript from Hitesh Chowdhury 
