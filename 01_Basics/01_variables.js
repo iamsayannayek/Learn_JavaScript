@@ -9,7 +9,7 @@ accountPassword = 24641
 accountCity = "Nadia"
 
 /*
-Didn,t used var for declaring a variable 
+Didn't used var for declaring a variable 
 beacuse of issue in block scope and functional scope
 */
 
