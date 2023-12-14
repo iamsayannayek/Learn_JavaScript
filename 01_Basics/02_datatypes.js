@@ -32,7 +32,7 @@ const bigNumber = 5465246257627626778789n;
 console.log(`BigInt: ${typeof bigNumber}`);
 
 //Arrays:
-const heros = ["Sayan", "Ananya", "Sambit"];
+const heros = ["Sayan", "Ananya"];
 console.log(`Arrays: ${typeof heros}`);
 
 //Objects:
