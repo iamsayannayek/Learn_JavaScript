@@ -1,15 +1,15 @@
 const myArr = [1, 2, 3, 4, 5, 6];
-// console.log(myArr);
+console.log(myArr);
 
-// myArr.push(63); //^ Add element from the end side
-// myArr.pop();//^ Remove element from the end side
-// myArr.unshift(9); //& Add element from the beginning side
-// myArr.shift(); //& Remove element from the beginning end
+myArr.push(63); //^ Add element from the end side
+myArr.pop(); //^ Remove element from the end side
+myArr.unshift(9); //& Add element from the beginning side
+myArr.shift(); //& Remove element from the beginning end
 
-// console.log(myArr.includes(2)); //! Check the element is present or not
-// console.log(myArr.indexOf(4)); //! Give element position no.
+console.log(myArr.includes(2)); //! Check the element is present or not
+console.log(myArr.indexOf(4)); //! Give element position no.
 
-// const newArr = myArr.join(); //? Convert the Array into String
+const newArr = myArr.join(); //? Convert the Array into String
 
 //* Difference b/w Slice() & Splice()
 console.log("Original Array: " + myArr);
