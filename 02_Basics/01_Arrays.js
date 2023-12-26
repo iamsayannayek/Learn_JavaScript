@@ -25,9 +25,10 @@ console.log("Original Array: " + myArr);
 /*
 ! So, Using Splice() the Main Array is manipulated but using Slice() the Main
 ! Array is not Manipulated
-^ Original Array: 1,2,3,4,5,6
+? Original Array: 1,2,3,4,5,6
 * Using Slice: 1,2
-^ Original Array: 1,2,3,4,5,6
+? Original Array: 1,2,3,4,5,6
 * Using Splice: 1,2
-^ Original Array: 3,4,5,6
+? Original Array: 3,4,5,6
 */
+
