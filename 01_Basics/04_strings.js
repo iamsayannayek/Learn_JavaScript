@@ -14,3 +14,6 @@ console.log(gameName.charAt(2));
 //* Output: y
 console.log(gameName.indexOf("y"));
 //* Output: 2
+
+let url = "https://imsayannayek.com/github.com%20ffda%20hgfdav/";
+console.log(url.replace('%20', '-'));
