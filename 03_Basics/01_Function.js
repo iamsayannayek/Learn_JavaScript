@@ -8,7 +8,6 @@ const sumTwoNum = function(num){
     return num
 }
 
-
 /* 
 *   Note:
 ?       We define function by use any type format but in Type 2 there is a one problem
@@ -18,19 +17,19 @@ const sumTwoNum = function(num){
 //! Calling Function
 const solve = sumTwoNum(3, 67) //^ Here the passing value in function called the Arguments
 
-// console.log(solve);
+console.log(solve);
 
 //! Passing multiple arguments in Function by Rest Operator
 //& Syntax: '...variableName'
 function multipleValues(...num){
     return num;
 }
-// console.log(multipleValues(200, 300, 500));
+console.log(multipleValues(200, 300, 500));
 //* Output: [200, 300, 500]; It's Return an Array
 
 //^ Interview Perspective
 function numbersValue(var1, var2, ...vars){
-    // console.log(var1, var2, vars);
+    console.log(var1, var2, vars);
 }
 numbersValue(200, 512, 5444, 897876, 343474)
 /*
