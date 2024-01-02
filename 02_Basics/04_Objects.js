@@ -30,4 +30,15 @@ const JSUser = {
     isLoggedIn: false
 }
 
-console.log(JSUser.hasOwnProperty("isLogged"));
+// console.log(JSUser.hasOwnProperty("isLogged"));
+
+//! ++++++++++++++ Objects Destructuring +++++++++++++++++
+const Course = {
+    courseName: "Js in Hindi",
+    price: "999",
+    courseInstructor: "Sayan"
+}
+
+const {courseInstructor} = Course;
+
+console.log(courseInstructor);
