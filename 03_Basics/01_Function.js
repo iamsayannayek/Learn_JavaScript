@@ -1,12 +1,12 @@
 //! Type1: Function Definition
 function sumTwoNum(num1, num2) { //^ Here the getting value is called parameters
-    return (num1+num2);
+    return (num1 + num2);
 }
 
 //! Type2: Function Definition (It's sometimes called Expression)
-const sumTwoNum = function(num){
-    return num
-}
+const sumTwoNum = function (num) {
+    return num;
+};
 
 /* 
 *   Note:
@@ -15,23 +15,23 @@ const sumTwoNum = function(num){
 ?   it's doesn't showing error.
 */
 //! Calling Function
-const solve = sumTwoNum(3, 67) //^ Here the passing value in function called the Arguments
+const solve = sumTwoNum(3, 67); //^ Here the passing value in function called the Arguments
 
 console.log(solve);
 
 //! Passing multiple arguments in Function by Rest Operator
 //& Syntax: '...variableName'
-function multipleValues(...num){
+function multipleValues(...num) {
     return num;
 }
 console.log(multipleValues(200, 300, 500));
 //* Output: [200, 300, 500]; It's Return an Array
 
 //^ Interview Perspective
-function numbersValue(var1, var2, ...vars){
+function numbersValue(var1, var2, ...vars) {
     console.log(var1, var2, vars);
 }
-numbersValue(200, 512, 5444, 897876, 343474)
+numbersValue(200, 512, 5444, 897876, 343474);
 /*
 *   Output:
 ^   var1 = 200
@@ -41,9 +41,9 @@ numbersValue(200, 512, 5444, 897876, 343474)
 
 //! Global Scope & Block Scope
 let a = 10;
-function one(){
+function one() {
     let a = 20;
     console.log(`Inner: ${a}`); //^ Block Scope Variables doesn't access from outer scope
 }
-one()
+one();
 console.log(`Outer: ${a}`); //^ Access From anywhere

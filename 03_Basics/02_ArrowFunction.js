@@ -6,7 +6,7 @@ const user = {
     welcomeMessage: function () {
         console.log(`${this.username}, welcome to website`);
     }
-}
+};
 /*
 * Note:
 &   In Node Environment --> Print Globally:
@@ -18,16 +18,16 @@ const user = {
 */
 
 //! Arrow function define
-const car = (name) =>{
+const car = (name) => {
     return name; //* It's called Explicit return
-}
+};
 
-// console.log(car("BMW"));
+console.log(car("BMW"));
 //& We define arrow function by another way that's called "Implicit return"
 const car1 = (name) => (name); //* Here we don't used return keyword
 //* If we use return statement then we need to add curly parenthesis
 
 //? For returning object by this method type
-const obj = () => ({username: "Sayan"})
+const obj = () => ({ username: "Sayan" });
 
 console.log(obj());
