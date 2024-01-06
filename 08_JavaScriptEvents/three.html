@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+
+<body>
+    <h1>Chai Aur JavaScript</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div id="newDiv"></div>
+
+</body>
+<script>
+    const start = document.querySelector('#start');
+    const stop = document.querySelector('#stop');
+    const newDiv = document.querySelector('div');
+    const sayDate = () => {
+        console.log("Sayan", Date.now());
+        newDiv.innerHTML += `<p>Sayan</p>`;
+    };
+
+    let intervalId;
+    // const clearIntervalId = clearInterval(intervalId)
+
+    start.addEventListener('click', (e) => {
+        intervalId = setInterval(sayDate, 1000);
+    });
+
+    stop.addEventListener('click', (e) => {
+        clearInterval(intervalId);
+    })
+</script>
+
+</html>
