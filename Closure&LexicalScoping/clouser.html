@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+
+<body style="background-color: #313131;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+    // Closure
+    function makeFunc() {
+        const name = "Sayan";
+        function displayName() {
+            console.log(name);
+        }
+
+        return displayName;
+    }
+
+    const myFunc = makeFunc();
+    myFunc()
+
+    /*
+    When function is return that time it's not only return the 
+    execution context of the inner function it's return total return the 
+    lexical scoping of the function
+    */
+</script>
+
+<script>
+    function changeBG(color) {
+        return function () {
+            document.body.style.backgroundColor = `${color}`;
+        };
+    }
+
+    document.getElementById('orange').onclick = changeBG("orange");
+    document.getElementById('green').onclick = changeBG("green");
+
+
+</script>
+
+</html>
